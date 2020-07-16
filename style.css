@@ -3,9 +3,17 @@ html {
   }
 
 
+body{
+  font-family: futura-pt, sans-serif;
+  font-family:"futura-pt";
 
 
-@media (max-width:500px){
+}
+
+/* ---------------------------------Mobile Phone Portrait ------------------------------------------------------ */
+
+
+@media only screen and (max-width:550px) and (orientation: portrait){
 
 
     .imgBGmobile {
@@ -13,22 +21,19 @@ html {
     }
 
     .section-1-Headline {
-        /* top: 606px;
-        left: 37px; */
-        /* width: 340px; */
+      
         position: relative;
         width: 100%;
-        /* height: 123px; */
-        padding: 1vh;
+        padding: 1vw;
         text-align: left;
         font-size: 7vw;
 
-        margin-top: 3vh;
+        margin-top: 3vw;
         height: 30vw;
 
         font-weight: bold;
         line-height: normal;
-        font-family: Futura PT;
+        /* font-family: Futura PT; */
         /* letter-spacing: 0px; */
         color: #1224A6;
         opacity: 1;
@@ -37,12 +42,12 @@ html {
 
     .section-1-Description {
         position: relative;
-        text-align: justify;
+        text-align: left;
         /* margin-top: 10vw; */
-        padding: 1vh;
+        padding: 1vw;
         line-height: normal;
-        font-family: Futura PT;
-        font-size: 5vw;
+        /* font-family: Futura PT; */
+        font-size: 4vw;
         letter-spacing: 0px;
         color: #707070;
         opacity: 1;
@@ -50,18 +55,18 @@ html {
 
     .section-1-Button {
         position: relative;
-        /* left: 8vh; */
-        /* top: 875px; */
-        /* left: 93px; */
-        /* width: 229px;
-        height: 44px; */
-        width: 80vw;
-        height: 12vh;
+        border: none;
+        font-weight:bold;
+
+        left: 15vw;
+        top:3vw;
+         width: 50vw;
+        height: 10vw;
         background: transparent linear-gradient(90deg, #FFBD00 0%, #FF8F00 100%) 0% 0% no-repeat padding-box;
         box-shadow: 0px 5px 10px #00000029;
         border-radius: 10px;
         opacity: 1;
-        font-size: 5vw;
+        font-size:4vw;
         letter-spacing: 0px;
         color: #FFFFFF;
         opacity: 1;
@@ -91,20 +96,21 @@ html {
     .section2-Headline {
         font-weight: bold;
         line-height: normal;
-        padding-top: 5vh;
+        padding-top: 15vw;
         /* padding-left: 2vh; */
         text-align: left;
         font-size: 7vw;
         letter-spacing: 0px;
         color: #1224A6;
         opacity: 1;
+        padding-left:1vw;
     }
 
     .section-2-card {
         width: 100%;
         height: 100%; 
-        margin-top: 2vh;
-        padding: 1vh;
+        margin: 2vw;
+        padding: 2vw;
         background: #FFFFFF 0% 0% no-repeat padding-box;
         box-shadow: 7px 7px 20px #b1b1b17a;
         border-radius: 10px;
@@ -114,19 +120,19 @@ html {
     .sec-2-card-1-img {
       
         width: 100%;
-
+        height:  100%;
 
     }
 
     .sec-2-card-1-head {
-        text-align: justify;
+        text-align: left;
         /* font: Medium 28px/35px Futura PT; */
-        font-size: larger;
+        font-size: 4.3vw;
         font-weight: 500;
         letter-spacing: 0px;
         color: #707070;
         opacity: 1;
-        padding-top: 1vh;
+        padding-top: 2vw;
     }
 
 
@@ -134,7 +140,7 @@ html {
         text-align: justify;
         /* font: Medium 28px/35px Futura PT; */
         letter-spacing: 0px;
-        font-size: medium;
+        font-size: 4vw;
         color: #707070;
         opacity: 1;
         /* margin-top: -5vh; */
@@ -143,12 +149,14 @@ html {
 
     .moonShot {
         background: transparent linear-gradient(122deg, #FFBD68 0%, #FCE99F 3%, #FCDC7E 11%, #EFBD2E 30%, #E18105 100%) 0% 0% no-repeat padding-box;
+        font-size:5vw;
+
     }
 
     .moonShot>span {
-        padding-left: 5vh;
+        padding-left: 5vw;
 
-        font: Medium 24px/31px Futura PT;
+        /* font: Medium 24px/31px Futura PT; */
         letter-spacing: 0px;
         color: #FFFFFF;
         opacity: 1;
@@ -156,8 +164,7 @@ html {
 
     .moonShot>p {
         text-align: left;
-        padding-left: 5vh;
-        /* font: Heavy 28px/35px Futura PT; */
+        padding-left: 5vw;
         letter-spacing: 0px;
         color: #FFFFFF;
         opacity: 1;
@@ -165,13 +172,20 @@ html {
 
 
     
-    .section-2-Button{
-        width: 70vw;
-        height: 15vw;
+   .section-2-Button{
+       border: none;
+        position: relative;
+        font-weight:bold;
+        left: 20vw;
+        top:3vw;
+        width: 50vw;
+        height: 10vw;
+       
         background: transparent linear-gradient(90deg, #FFBD00 0%, #FF8F00 100%) 0% 0% no-repeat padding-box;
         box-shadow: 0px 5px 10px #00000029;
         border-radius: 10px;
-        font-size: 5vw;
+        font-size: 4vw;
+        font-weight:bold;
         letter-spacing: 0px;
         color: #FFFFFF;
         opacity: 1;
@@ -182,24 +196,24 @@ html {
     /* ----------------------SEction 3 ------------------- */
     
 .section-3{
-    margin-top:10vh;
+    margin-top:10vw;
     height: auto;
     background: #E1F5FE 0% 0% no-repeat padding-box;
     opacity: 1;
    }
 
-   .section-3-left-box{
-    /* padding-left:10vw; */
+   /* .section-3-left-box{
     padding-top:5vh;
-} 
+}  */
 
 .section-3-left-title{
+    padding-top: 5vw;
   text-align: left;
   font-size: 7vw;
   letter-spacing: 0px;
   color: #1224A6;
   opacity: 1;
-  padding-left: 5vh;
+  padding-left: 10vw;
 }  
 
 
@@ -207,13 +221,12 @@ html {
   list-style-type: none ; 
   color: #707070; 
   font-weight:lighter;
-  font-size:5vw;
-  padding-top: 1vh;
+  font-size:4vw;
+  padding-top: 1vw;
 }
 
 .section-3-left-down-box{
-  padding-top: 4vw;
-  /* margin-left:-10vw; */
+  padding-top: 3vw;
   font-size: 4vw;
   font-weight: normal;
   width: 100%;
@@ -221,31 +234,40 @@ html {
 
 
 .section-3-right-box{
-  padding-left:2vh;
+  padding-left:10vw;
 }
 .section-3-right-title{
-  font-size: 3vh;
+  font-size: 7vw;
   color: #1224A6;
-  padding-top: 5vh;
+  padding-top: 5vw;
+  padding-left:10vw;
+
 }
 
 .section-3-right-subTitle{
   color: #1224A6;
-  /* padding: 10vh; */
-  font-size: 2vh;
-  font-weight: lighter
+  padding: 5vw;
+  font-size: 4vw;
+  font-weight: lighter;
+
 }
 
+.section-3-right-subTitle-2{
+    padding-left: 5vw;
+    font-size: 4vw;
+
+
+}
 
 .formField{
   font-size: x-small;
-  width:60vw;
-  color:black;
-  padding-left: 2vh;
+  width:100%;
+  color: #707070; 
+  padding-left: 5vw;
   font-weight: bold;
   border:none;
-  padding: 1vh;
-  margin: -0.5vh;
+  padding: 2vw;
+  margin: -0.3vw;
 }
 
 .submitBtn{
@@ -259,12 +281,16 @@ html {
   border-radius: 10px;
   opacity: 1;
   color:white;
-  font-size: small;
   border:none;
-  width: 46vw;
   font-weight:bold;
-  padding: 2vh 2vh 2vh 2vh;
-  margin-bottom: 7vh;
+  padding: 2vw;
+  margin-bottom: 7vw;
+  font-size: 4vw;
+  position: relative;
+  left: 10vw;
+  top:3vw;
+  width: 50vw;
+  height: 10vw;
   
 }
 
@@ -278,6 +304,7 @@ html {
   .section-4-title{
       text-align: left;
     
+      padding:5vw;
       letter-spacing: 0px;
       color: #1224A6;
       opacity: 1;
@@ -292,7 +319,10 @@ html {
       opacity: 1;
       width: 100%;
       /* height: 100%; */
-      text-align: center
+      text-align: center;
+      font-size: 4.3vw;
+      color: #707070; 
+
   }
   
   .sec-4-card-txt-1{
@@ -352,16 +382,16 @@ html {
     text-align: left;
     /* font: Book Oblique 18px/23px Futura PT; */
     font-family: Oblique;
-    font-size: 3vw;;
+    font-size: 3.5vw;;
     letter-spacing: 0px;
     color: #051378;
     font-style: italic;
 }
 
 .section-5-card-para{
-    text-align: justify;
+    text-align: left;
     /* font: Book 20px/26px Futura PT; */
-    font-size: 3vw;;
+    font-size: 4vw;;
     font-weight: lighter;
     letter-spacing: 0px;
     color: #707070;
@@ -387,7 +417,7 @@ html {
 
 .faq-title-q{
     display: block;
-    font-size: 4vw; /*title */
+    font-size: 4.3vw; /*title */
     color:#707070;
     text-decoration: none;
     width:65vw;
@@ -429,7 +459,7 @@ html {
 
 .FAQ-bull{
     color:#1224A6; 
-    font-size:5vw;
+    font-size:6vw;
     font-weight: bolder;
 }
 
@@ -453,14 +483,33 @@ html {
 }
 
 
-/* ----------------------------------Section - 8 -------------------- */
+
+.btn-submit-sec-7{
+
+    background: transparent linear-gradient(90deg, #FFBD00 0%, #FF8F00 100%) 0% 0% no-repeat padding-box;
+    box-shadow: 0px 5px 10px #00000029;
+    border-radius: 10px;
+    opacity: 1;
+    color:white;
+    font-size: 4vw;
+    border:none;
+    width: 50vw;
+
+    font-weight:bold;
+    padding: 2vw;
+    margin: 3vw 0 3vw 8vw;
+    
+}
+
+
+/* ----------------------------------Section - 8 - Footer------------------- */
 
 .section-8{
-    background: transparent linear-gradient(180deg, #1224A6 0%, #051378 100%) 0% 0% no-repeat padding-box;
+background: transparent linear-gradient(180deg, #1224A6 0%, #051378 100%) 0% 0% no-repeat padding-box;
 opacity: 1;
 height: auto;
 color:#FFFFFF;
-padding:5vh
+padding:4vw
 }
 
 
@@ -504,29 +553,17 @@ padding:5vh
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
 
 
 
-/********************************************** TABLET AND PC ********************************************8*/
 
-@media(min-width: 500px){
+/* ***********************************  LandScape mobile      *********************************************** */
 
+@media  (max-width: 900px)  and (orientation: landscape) {
+
+
+  
 .section-1{
     /* padding: 5vw; */
     padding:5vh 0 0 10vh
@@ -548,12 +585,12 @@ padding:5vh
 
     .section-1-Description {
       
-        padding-right: 23vh;
+        /* padding-right: 23vw; */
         position: relative;
         width: 60vw;
         text-align: justify;
         line-height: normal;
-        font-family: Futura PT;
+        /* font-family: Futura PT; */
         font-size: 1.3vw;
         letter-spacing: 0px;
         color: #707070;
@@ -561,11 +598,13 @@ padding:5vh
     }
     .section-1-Button {
         width: 15vw;
+        border: none;
+        font-weight:bold;
         height: 5vw;
         background: transparent linear-gradient(90deg, #FFBD00 0%, #FF8F00 100%) 0% 0% no-repeat padding-box;
         box-shadow: 0px 5px 10px #00000029;
         border-radius: 10px;
-        font-size: 1.1vw;
+        font-size: 1.3vw;
         letter-spacing: 0px;
         color: #FFFFFF;
         opacity: 1;
@@ -592,6 +631,8 @@ padding:5vh
     }
 
     .section-2-Button{
+        border: none;
+        font-weight:bold;
         width: 15vw;
         height: 5vw;
         background: transparent linear-gradient(90deg, #FFBD00 0%, #FF8F00 100%) 0% 0% no-repeat padding-box;
@@ -601,8 +642,9 @@ padding:5vh
         letter-spacing: 0px;
         color: #FFFFFF;
         opacity: 1;
-        
-        margin-top: 6vw;
+        margin:8vw;
+        text-align: center;
+        /* margin-top: 6vw; */
     }
     .section2-Headline {
         font-weight: bold;
@@ -628,6 +670,8 @@ padding:5vh
         box-shadow: 7px 7px 20px #b1b1b17a;
         border-radius: 10px;
         opacity: 1;
+        align-items: center;
+
     }
 
     .sec-2-card-1-img {
@@ -635,26 +679,27 @@ padding:5vh
         background-size: cover;
         background-repeat: no-repeat; */
         width: 100%;
-        /* height: 100%; */
+        height: 100%;
 
 
     }
 .sec-2-gap-card{
-    padding:2vh
+    padding:2vw
 }
-
 
     .sec-2-card-1-head {
         text-align: justify;
-        width: 100%;
+        /* width: 70%; */
+        /* height: 100%; */
         /* font: Medium 28px/35px Futura PT; */
-        font-size: smaller;
+        font-size: 1.5vw;
         font-weight: 500; 
         letter-spacing: 0px;
         color: #707070;
         opacity: 1;
-        text-align: left;
-        margin-top: 1vh;
+        /* text-align: left; */
+        padding-top: 1vh;
+        padding:auto
     }
 
 
@@ -662,7 +707,7 @@ padding:5vh
         text-align: left;
         /* font: Medium 28px/35px Futura PT; */
         letter-spacing: 0px;
-        font-size: small;
+        font-size: 1.3vw;
         color: #707070;
         opacity: 1;
         /* margin-top: -5vh; */
@@ -681,8 +726,7 @@ padding:5vh
         text-align: left;
         padding-left: 1vh;
         font-size: small;
-      
-        letter-spacing: 0px;
+              letter-spacing: 0px;
         color: #FFFFFF;
         opacity: 1;
     }
@@ -693,25 +737,29 @@ padding:5vh
 /* ----------------------------------Section 3 ----------------------------- */
 
 .section-3{
-    margin-top:10vh;
+    margin-top:5vw;
     height: auto;
     background: #E1F5FE 0% 0% no-repeat padding-box;
     opacity: 1;
    }
 
 
-  .section-3-left-box{
+  /* .section-3-left-box{
       padding-left:10vw;
-      padding-top:5vh;
-  } 
+      padding-top:5vw;
+
+    }  */
 
  .section-3-left-title{
+    padding-top:6vw;
+    padding-left: 10vw;
+
     text-align: left;
-    font-size: 2.2vw;
+    font-size: 2vw;
     letter-spacing: 0px;
     color: #1224A6;
     opacity: 1;
-    padding-left: 5vh;
+    /* padding-left: 5vh; */
  }  
 
 
@@ -719,56 +767,58 @@ padding:5vh
     list-style-type: none ; 
     color: #707070; 
     font-weight:lighter;
-    font-size:1.2vw;
-    padding-top: 1vh;
+    font-size:1.3vw;
+    padding-top: 1vw;
+    padding-left: 10vw;
+
 }
 
 .section-3-left-down-box{
     padding-top: 4vw;
-    font-size: 1vw;
+    font-size: 1.3vw;
     font-weight: normal;
-    width: 100%;
+    /* width: 100%; */
 }
 
 
 .section-3-right-box{
-    padding-left:8vh;
+    padding-left:5vw;
 }
 .section-3-right-title{
-    font-size: xx-large;
+    font-size: 2.6vw;
     color: #1224A6;
-    padding-top: 5vh;
+    padding-top: 5vw;
+    width:100%;
 }
 
 .section-3-right-subTitle{
     color: #1224A6;
     /* padding: 10vh; */
-    width: 50%;
+    /* width: 50%; */
     font-size: 1.2vw;
     font-weight: lighter
 }
 
 .section-3-right-subTitle-2{
-display:block;
+    /* display:block; */
 }
 
 
 .formField{
-    font-size: x-small;
-    width:40vh;
+    font-size: 1.2vw;
+    /* width:80%; */
     color:black;
-    padding-left: 2vh;
+    /* padding-left: 2vh; */
     font-weight: bold;
     border:none;
-    padding: 1vh;
-    margin: 0;
-    margin: -0.5vh;
+    padding: 5%;
+    /* margin: -0.5vw;x */
 }
 
-.submitBtn{
-    padding-left: 10vh;
-    padding-top: 5vh;
-}
+/* .submitBtn{
+    padding-left: 6vw;
+    padding-top: 5vw;
+} */
 
 .btn-submit{
     background: transparent linear-gradient(90deg, #FFBD00 0%, #FF8F00 100%) 0% 0% no-repeat padding-box;
@@ -776,7 +826,7 @@ display:block;
     border-radius: 10px;
     opacity: 1;
     color:white;
-    font-size: small;
+    font-size: 1.3vw;
     border:none;
     width: 12vw;
     font-weight:bold;
@@ -791,12 +841,11 @@ display:block;
 /* -------------------------Section 4 -------------------------------- */
 
 .section-4{
-  padding: 4vh;
+  /* padding: 4vw; */
 
 }
 .section-4-title{
     text-align: left;
-  
     letter-spacing: 0px;
     color: #1224A6;
     opacity: 1;
@@ -810,16 +859,16 @@ display:block;
     border-radius: 10px;
     opacity: 1;
     width: 100%;
-    /* height: 100%; */
+    height: 90%;
+    font-size: 1.5vw;
     text-align: center
 
 }
 
-.sec-4-card-txt-1{
-    padding:5vw
-}
 .sec-4-card-txt{
-    padding: 6vw;
+    /* padding: 1vw; */
+    text-align: center
+
 }
 
 /* ---------------------------SECTION 5 ----------------------------- */
@@ -970,35 +1019,53 @@ display:block;
     color:#1224A6;
     /* font-family: Futura PT; */
     font-weight: bold;
-    padding:6vw 0 0 10vw
+    padding:7vw 0 0 6vw;
+    font-size:3vw
 }
 
 .section-7-form{
-    padding:5vw 2vw 0 4vw
+    padding:3vw 2vw 0 3vw
 }
+
+.btn-submit-sec-7{
+
+    background: transparent linear-gradient(90deg, #FFBD00 0%, #FF8F00 100%) 0% 0% no-repeat padding-box;
+    box-shadow: 0px 5px 10px #00000029;
+    border-radius: 10px;
+    opacity: 1;
+    color:white;
+    font-size: 1.3vw;
+    border:none;
+    width: 15vw;
+    font-weight:bold;
+    padding: 1vw;
+    margin: 1vw 0 1vw 5vw;
+    
+}
+
 
 
 
 /* ----------------------------------Section -8 ---- Footer ----------------------- */
 
 .section-8{
-    background: transparent linear-gradient(180deg, #1224A6 0%, #051378 100%) 0% 0% no-repeat padding-box;
+background: transparent linear-gradient(180deg, #1224A6 0%, #051378 100%) 0% 0% no-repeat padding-box;
 opacity: 1;
 height: auto;
 color:#FFFFFF
 }
 
 .address{
-    padding:4vw 0 2vw 4vw
+    /* padding:4vw 0 2vw 4vw */
 }
 .address-icon{
     font-size: 3vw;
 }
 .address-text{
-    font-size: 1.1vw;
+    font-size: 1.2vw;
 }
 .companyName{
-    font-size: 1.5vw;
+    font-size: 1.3vw;
     font-weight: bold  ;
 }
 .companyAdd{
@@ -1008,7 +1075,7 @@ color:#FFFFFF
 
 
 .support{
-    padding:4vw 0 2vw 4vw
+    /* padding:4vw 0 2vw 4vw */
 
 }
 .support-txt{
@@ -1023,7 +1090,7 @@ color:#FFFFFF
 
 
 .phone{
-    padding:4vw 0 2vw 4vw
+    /* padding:4vw 0 2vw 4vw */
 
 }
 .phone-icon{
@@ -1038,4 +1105,566 @@ color:#FFFFFF
 
 
 
+
+
 }
+
+
+
+/* ********************************************Tablet and laptop and PC screens  8======================================*/
+
+
+@media  (min-width: 550px)  {
+
+  
+    .section-1{
+        /* padding: 5vw; */
+        padding:5vw 0 0 5vw
+    
+    }
+    
+        .section-1-Headline {
+            /* position: relative; */
+            /* padding: 1vw; */
+            text-align: left;
+            font-size: 2vw;
+            font-weight: bold;
+            line-height: normal;
+            color: #1224A6;
+            opacity: 1;
+            width: 100%;
+        }
+    
+    
+        .section-1-Description {
+          
+            padding-right: 23vw;
+            position: relative;
+            width: 60vw;
+            text-align: justify;
+            line-height: normal;
+            font-size: 1.3vw;
+            letter-spacing: 0px;
+            color: #707070;
+            opacity: 1;
+        }
+        .section-1-Button {
+            border: none;
+            font-weight:bold;
+            width: 15vw;
+            height: 5vw;
+            background: transparent linear-gradient(90deg, #FFBD00 0%, #FF8F00 100%) 0% 0% no-repeat padding-box;
+            box-shadow: 0px 5px 10px #00000029;
+            border-radius: 10px;
+            font-size: 1.3vw;
+            letter-spacing: 0px;
+            border: none;
+            color: #FFFFFF;
+            opacity: 1;
+            float: right;
+            margin-top: -8vw;
+            text-align: center;
+            /* margin-right: 10vw; */
+        }
+        .section-1-Button:after{
+            /* float:clear; */
+            clear: both;
+        }
+        .section-1-Button:hover {
+            transform: scale(1.05);
+            background: transparent linear-gradient(90deg, #FFBD00 0%, #FF8F00 100%) 0% 0% no-repeat padding-box;
+            box-shadow: 0px 5px 10px #00000029;
+            border-radius: 10px;
+            color: #ffffff;
+        }
+    
+        /* ------------------------------------------------------------------ */
+        .section-2{
+            /* padding:0 5vw 0 5vw; */
+            padding:3vw 0 0 3vw
+        }
+    
+        .section-2-Button{
+            width: 15vw;
+            border: none;
+            font-weight:bold;
+            height: 5vw;
+            background: transparent linear-gradient(90deg, #FFBD00 0%, #FF8F00 100%) 0% 0% no-repeat padding-box;
+            box-shadow: 0px 5px 10px #00000029;
+            border-radius: 10px;
+            font-size: 1.3vw;
+            letter-spacing: 0px;
+            color: #FFFFFF;
+            opacity: 1;
+            border: none;
+
+            margin-top: 6vw;
+            margin-left: 2vw;
+        }
+        .section2-Headline {
+            font-weight: bolder;
+            line-height: normal;
+            padding-top: 5vw;
+            padding-left: 3vw;
+            text-align: left;
+            font-size: 2vw;
+            /* font: Heavy 32px/41px Futura PT; */
+            letter-spacing: 0px;
+            color: #1224A6;
+            opacity: 1;
+            margin-bottom: 3vw;
+        }
+    
+    
+    
+        .section-2-card {
+            width: 100%;
+            height: 100%;
+            padding: 1vw;
+            background: #FFFFFF 0% 0% no-repeat padding-box;
+            box-shadow: 7px 7px 20px #b1b1b17a;
+            border-radius: 10px;
+            opacity: 1;
+    
+        }
+    
+        .sec-2-card-1-img {
+         
+            width: 100%;
+            height: 100%;
+    
+    
+        }
+        .sec-2-gap-card{
+            padding:1vw
+        }
+    
+        .sec-2-card-1-head {
+            text-align: left;
+            
+            font-size: 1.5vw;
+            font-weight: 500; 
+            letter-spacing: 0px;
+            color: #707070;
+            opacity: 1;
+            padding-top: 1vw;
+            padding:auto
+        }
+    
+    
+        .sec-2-card-1-para {
+            text-align: left;
+            letter-spacing: 0px;
+            font-size: 1.3vw;
+            color: #707070;
+            opacity: 1;
+        }
+    
+    
+        .moonShot {
+            background: transparent linear-gradient(122deg, #FFBD68 0%, #FCE99F 3%, #FCDC7E 11%, #EFBD2E 30%, #E18105 100%) 0% 0% no-repeat padding-box;
+        }
+    
+       .moonshot-1-line-text{
+           font-size: 1.3vw;
+       }
+    
+        .moonShot>p {
+            text-align: left;
+            padding-left: 1vw;
+            font-size: 1.3vw;
+            letter-spacing: 0px;
+            color: #FFFFFF;
+            opacity: 1;
+        }
+    
+    
+    
+    
+    /* ----------------------------------Section 3 ----------------------------- */
+    
+    .section-3{
+        margin-top:5vw;
+        height: auto;
+        background: #E1F5FE 0% 0% no-repeat padding-box;
+        opacity: 1;
+       }
+    
+    
+      /* .section-3-left-box{
+          padding-left:10vw;
+          padding-top:5vw;
+    
+        }  */
+    
+     .section-3-left-title{
+        padding-top:6vw;
+        padding-left: 10vw;
+        text-align: left;
+        font-size: 2vw;
+        font-weight: bold;
+        letter-spacing: 0px;
+        color: #1224A6;
+        opacity: 1;
+        /* padding-left: 5vh; */
+     }  
+    
+    
+    .section-3-left-list{
+        list-style-type: none ; 
+        color: #707070; 
+        font-weight:lighter;
+        font-size:1.3vw;
+        padding-top: 1vw;
+        padding-left: 10vw;
+    
+    }
+    
+    .section-3-left-down-box{
+        padding-top: 4vw;
+        font-size: 1.3vw;
+        font-weight: normal;
+        padding-left: 5vw;
+
+        /* width: 100%; */
+    }
+    
+    
+    .section-3-right-box{
+        padding-left:5vw;
+    }
+
+    .section-3-right-title{
+        font-size: 3vw;
+        color: #1224A6;
+        padding-top: 4vw;
+        width:100%;
+    }
+    
+    .section-3-right-subTitle{
+        color: #1224A6;
+        /* padding: 10vh; */
+        /* width: 50%; */
+        font-size: 1.3vw;
+        font-weight: lighter
+    }
+    
+    .section-3-right-subTitle-2{
+        /* display:block; */
+    }
+    
+    
+    .formField{
+        font-size: 1.3vw;
+        width:100%;
+        color: #707070; 
+        padding-left: 1vw;
+        font-weight: bold;
+        border:none;
+        padding: 1vw;
+        /* margin: -0.5vw;x */
+    }
+    
+    .submitBtn{
+        padding-left: 4vw;
+        padding-top: 3vw;
+    }
+    
+    .btn-submit{
+        background: transparent linear-gradient(90deg, #FFBD00 0%, #FF8F00 100%) 0% 0% no-repeat padding-box;
+        box-shadow: 0px 5px 10px #00000029;
+        border-radius: 10px;
+        opacity: 1;
+        color:white;
+        font-size: 1.3vw;
+        border:none;
+        font-weight:bold;
+        margin-bottom: 5vw;
+
+
+
+
+       
+        width: 15vw;
+        font-weight:bold;
+        padding: 1vw;
+        /* margin: 1vw 0 1vw 5vw; */
+    }
+    
+    
+    
+    
+    /* -------------------------Section 4 -------------------------------- */
+    
+    .section-4{
+      padding: 4vw;
+    
+    }
+    .section-4-title{
+        text-align: left;
+        letter-spacing: 0px;
+        color: #1224A6;
+        opacity: 1;
+        font-size:2vw;
+        padding: 1vw;
+    
+    }
+    
+    .section-4-card{
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        box-shadow: 0px 10px 15px #00000029;
+        border-radius: 10px;
+        opacity: 1;
+        width: 100%;
+        height: 100%;
+        font-size: 1.5vw;
+        text-align: center;
+        padding:2vw;
+        color: #707070; 
+
+
+    
+    }
+    
+    .sec-4-card-txt{
+        padding: 3vw 1vw 0vw 1vw;
+        text-align: center
+    
+    }
+    
+    /* ---------------------------SECTION 5 ----------------------------- */
+    
+    
+    .section-5-title{
+        text-align: left;
+        letter-spacing: 0px;
+        color: #1224A6;
+        opacity: 1;
+        font-size:2vw;
+    }
+    
+    .section-5-blue{
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        border: 2px solid #5169FB;
+        border-radius: 10px;
+        opacity: 1;
+    }
+    
+    .section-5-yellow{
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        border: 2px solid #FFBD00;
+        border-radius: 10px;
+        opacity: 1;
+    
+    }
+    
+    
+    .section-5-card{
+        padding:3vw 2vw 0 2vw;
+    
+        height: 95%;
+    }
+    
+    .section-5-card-Head-title{
+        text-align: left;
+        /* font: Bold Oblique 20px/23px Futura PT; */
+        font-family: Oblique;
+        font-size: 1.5vw;;
+        letter-spacing: 0px;
+        color: #051378;
+        font-style: italic;
+        font-weight: bold;
+    
+    }
+    
+    .section-5-card-Head-subtitle{
+        text-align: left;
+        /* font: Book Oblique 18px/23px Futura PT; */
+        font-family: Oblique;
+        font-size: 1.2vw;;
+        letter-spacing: 0px;
+        color: #051378;
+        font-style: italic;
+    }
+    
+    .section-5-card-para{
+        text-align: justify;
+        /* font: Book 20px/26px Futura PT; */
+        font-size: 1.2vw;;
+        font-weight: lighter;
+        letter-spacing: 0px;
+        color: #707070;
+        opacity: 1;
+        margin-top:1vh;
+    }
+    
+    .sec-yel-pad{
+        padding:4vw 4vw 0 4vw;
+    }
+    
+    
+    
+    
+    
+    
+    
+    /* ---------------------------Section 6  FAQ ------------------------------*/
+    
+    .section-6{
+        /* margin-top: 8vw; */
+    
+    }
+    .FAQ-headline{
+        text-align: left;
+        font-size: 3vw;
+        letter-spacing: 0px;
+        color: #1224A6;
+        opacity: 1;
+    }
+    
+    .faq-title-q{
+        display: block;
+        font-size: 1.5vw; /*title que*/
+        color:#707070;
+        text-decoration: none;
+        width:65vw;
+        font-weight: normal;
+        /* padding-bottom:5vw */
+    }
+    
+    .faq-title-q:after{
+        font-family: 'FontAwesome';
+        font-style: normal;
+        font-size: 3vw;
+        content: "\f0d7";
+        color: #FF8F00;
+        float: right;
+        margin-top: 1vw;
+        transform: rotate(180deg);
+    }
+    
+    .panel-title>.collapsed:after {
+        content: "\f0d7";
+        transform: rotate(0deg);
+    }
+    
+    .panel-body {
+        font-size: 1.2vw;  /* paragraph*/
+        color:#707070;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        border: 1px solid #CC7402;
+        border-radius: 10px;
+        opacity: 1;
+        padding:2vw;
+        width:68vw;
+        /* margin-left: 5vw; */
+        font-weight: normal;
+    }
+    
+    .FAQ-bull{
+        color:#1224A6; 
+        font-size:3vw;
+        font-weight: bolder;
+    }
+    
+    
+    /* ---------------------------------Section - 7 -----------sign---------------------- */
+    
+    
+    .section-7{
+        background-color: #E1F5FE;
+        height: auto;
+    }
+    
+    .section-7-title-left{
+        color:#1224A6;
+        /* font-family: Futura PT; */
+        font-weight: bold;
+        padding:7vw 0 0 6vw;
+        font-size:4vw
+    }
+    
+    .section-7-form{
+        padding:3vw 0 0 3vw
+    }
+
+    .btn-submit-sec-7{
+
+        background: transparent linear-gradient(90deg, #FFBD00 0%, #FF8F00 100%) 0% 0% no-repeat padding-box;
+        box-shadow: 0px 5px 10px #00000029;
+        border-radius: 10px;
+        opacity: 1;
+        color:white;
+        font-size: 1.3vw;
+        border:none;
+        width: 15vw;
+        font-weight:bold;
+        padding: 1vw;
+        margin: 1vw 0 1vw 5vw;
+        
+    }
+    
+    
+    
+    /* ----------------------------------Section -8 ---- Footer ----------------------- */
+    
+    .section-8{
+    background: transparent linear-gradient(180deg, #1224A6 0%, #051378 100%) 0% 0% no-repeat padding-box;
+    opacity: 1;
+    height: auto;
+    color:#FFFFFF
+    }
+    
+    .address{
+        padding:4vw 0 2vw 4vw
+    }
+    .address-icon{
+        font-size: 3vw;
+    }
+    .address-text{
+        font-size: 1.2vw;
+    }
+    .companyName{
+        font-size: 1.3vw;
+        font-weight: bold  ;
+    }
+    .companyAdd{
+        font-weight: lighter;
+    }
+    
+    
+    
+    .support{
+        padding:4vw 0 2vw 4vw
+    
+    }
+    .support-txt{
+        font-size:1.3vw;
+        font-weight: normal;
+    }
+    
+    .support-env-icon{
+        font-size: 3vw;
+    
+    }
+    
+    
+    .phone{
+        padding:4vw 0 2vw 4vw
+    
+    }
+    .phone-icon{
+        font-size: 3vw;
+    
+    }
+    .phone-text{
+        font-size:1.3vw;
+        font-weight: normal;
+    }
+    
+    
+    
+    
+    
+    
+    }
