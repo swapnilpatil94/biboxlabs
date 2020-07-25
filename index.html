@@ -24,6 +24,15 @@
 
 </head>
 
+<script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const saleperson = urlParams.get('salesperson');
+    console.log("saleperson", saleperson);
+</script>
+
+
+
+
 <body class="">
 
     <header class="headerBG">
@@ -300,8 +309,10 @@
 
                 </form>
 
+                <span class="col-9 mb-2" id="formSubmissionMsg"> </span>
+
                 <div class="submitBtn">
-                    <button type="button" class="btn btn-submit">Book Free Trial</button>
+                    <button type="button" onclick="submitDatatoServer()" class="btn btn-submit">Book Free Trial</button>
                 </div>
 
                 <!-- </div> -->
@@ -698,22 +709,25 @@
 
                     <form class="mt-4 formGrp section-7-form">
                         <div class="col-md-8 mb-2 ">
-                            <input width="100%" type="text" class="formField" id="parentName"
+                            <input width="100%" type="text" class="formField empty" id="parentName1"
                                 placeholder="Parent's Name" value="" required>
                         </div>
 
                         <div class="col-md-8 mb-2 ">
-                            <input type="text" class="formField" id="contactNo" placeholder="Contact No." value=""
-                                required>
+                            <input type="text" class="formField empty" id="contactNo1" placeholder="Contact No."
+                                value="" required>
                         </div>
 
                         <div class="col-md-8 mb-2">
-                            <input type="text" class="formField" id="emailId" placeholder="Email ID" value="" required>
+                            <input type="text" class="formField empty" id="emailId1" placeholder="Email ID" value=""
+                                required>
                         </div>
+                        <span class="col-12 mb-2" id="formSubmissionMsg1"></span>
 
 
                         <div class="">
-                            <button type="button" class="btn btn-submit-sec-7">Book Free Trial</button>
+                            <button type="button" class="btn btn-submit-sec-7" onclick="submitDatatoServer1()">Book Free
+                                Trial</button>
                         </div>
 
                     </form>
@@ -841,5 +855,134 @@
 
 </body>
 
+
+<script>
+    submitDatatoServer = () => {
+        const urlParams = new URLSearchParams(window.location.search);
+        const saleperson = urlParams.get('salesperson');
+
+        let parentName = document.getElementById('parentName');
+        let email = document.getElementById('emailId')
+        let mobile = document.getElementById('contactNo')
+
+
+        if (parentName.value == '' && email.value == '' && mobile.value == '') {
+            parentName.style.border = '1px solid red';
+            email.style.border = '1px solid red';
+            mobile.style.border = '1px solid red';
+            setTimeout(() => {
+                parentName.style.border = 'none';
+                email.style.border = 'none';
+                mobile.style.border = 'none';
+            }, 5000)
+            return;
+        }
+        var User = {
+            parentname: parentName.value,
+            email: email.value,
+            mobile: Number(mobile.value),
+            salelink: saleperson
+        }
+        console.log('old', User)
+        let url = "http://localhost:9000/api/customer";
+
+        fetch(url, {
+            method: 'POST', // *GET, POST, PUT, DELETE, etc.
+            mode: 'cors', // no-cors, *cors, same-origin
+            cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
+            // credentials: 'same-origin', // include, *same-origin, omit
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            redirect: 'follow', // manual, *follow, error
+            referrerPolicy: 'no-referrer', // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
+            body: JSON.stringify(User) // body data type must match "Content-Type" header
+        })
+            .then((res) => {
+                if (res.status == 422) {
+                    document.getElementById('formSubmissionMsg').innerHTML = "Please enter the valid details or email is already registered ";
+                    document.getElementById('formSubmissionMsg').style.color = 'red'
+
+                } else if (res.status == 200) {
+                    document.getElementById('formSubmissionMsg').innerHTML = "Thanks for your submission!, Our executive will get back to you soon.";
+                    document.getElementById('formSubmissionMsg').style.color = 'green'
+                }
+                console.log('older', res)
+            })
+            .catch((err) => {
+                console.log('Server Communication error', err)
+                document.getElementById('formSubmissionMsg').innerHTML = "Server Communication error, please try again";
+                document.getElementById('formSubmissionMsg').style.color = 'red'
+
+            })
+
+        return 1; // parses JSON response into native JavaScript object
+    }
+</script>
+
+<script>
+    submitDatatoServer1 = () => {
+        const urlParams = new URLSearchParams(window.location.search);
+        const saleperson = urlParams.get('salesperson');
+        var parentName1 = document.getElementById('parentName1').value;
+        var email1 = document.getElementById('emailId1').value
+        var mobile1 = document.getElementById('contactNo1').value
+        if (parentName1 == '' && email1 == '' && mobile1 == '') {
+            document.getElementById('parentName1').style.border = '1px solid red';
+            document.getElementById('emailId1').style.border = '1px solid red';
+            document.getElementById('contactNo1').style.border = '1px solid red';
+            setTimeout(function () {
+                document.getElementById('parentName1').style.border = 'none';
+                document.getElementById('emailId1').style.border = 'none';
+                document.getElementById('contactNo1').style.border = 'none';
+            }, 5000)
+            return;
+        }
+        var user1 = {
+            parentname: parentName1,
+            email: email1,
+            mobile: Number(mobile1),
+            salelink: saleperson
+        }
+
+
+        console.log("new", user1)
+        let url = "http://localhost:9000/api/customer";
+        fetch(url, {
+            method: 'POST', // *GET, POST, PUT, DELETE, etc.
+            mode: 'cors', // no-cors, *cors, same-origin
+            cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
+            // credentials: 'same-origin', // include, *same-origin, omit
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            redirect: 'follow', // manual, *follow, error
+            referrerPolicy: 'no-referrer', // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
+            body: JSON.stringify(user1) // body data type must match "Content-Type" header
+        })
+            .then((res) => {
+                if (res.status == 422) {
+                    document.getElementById('formSubmissionMsg1').innerHTML = "Please enter the valid details or email is already registered ";
+                    document.getElementById('formSubmissionMsg1').style.color = 'red'
+
+                } else if (res.status == 200) {
+                    document.getElementById('formSubmissionMsg1').innerHTML = "Thanks for your submission!, Our executive will get back to you soon.";
+                    document.getElementById('formSubmissionMsg1').style.color = 'green'
+                }
+                console.log('data', res)
+            })
+            .catch((err) => {
+                console.log('Server Communication error', err)
+                document.getElementById('formSubmissionMsg1').innerHTML = "Server Communication error, please try again";
+                document.getElementById('formSubmissionMsg1').style.color = 'red'
+
+            })
+
+        return 1; // parses JSON response into native JavaScript object
+    }
+
+
+
+</script>
 
 </html>
